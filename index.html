@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire d'inscription</title>
+    <link rel="stylesheet" href="assets/css/ex7.css" type="text/css" >
+</head>
+<body>
+<!-- formulaire identité -->
+    <form id="identité">
+        <p>Votre identité</p>
+            <ol>
+                <li><label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"/></li>
+                <li><label>Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom"/></li>
+                <li><label>Adresse mail</label> : <input type="text" name="Adresse mail" placeholder="Adresse mail"/></li>
+            </ol>
+        
+    </form>
+<!-- formulaire adresse -->
+    <form id="adressedelivraison">
+        <p>Votre adresse de livraison</p>
+            <ol>
+                <li><label>Adresse</label> : <textarea id="Adresse" name="Adresse"></textarea></li>
+                <li><label>Code postal</label> : <input type="text" name="Code postal" placeholder="Code postal"/></li>
+                <li><label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"/></li>
+            </ol>
+    </form>
+<!-- formulaire règlement -->
+    <form id="règlement">
+        <p>Information de règlement</p>
+            <ol>
+                <li>Type de carte bancaire</li>
+                    <ul>
+                        <li>  VISA</li>
+                        <li>  Mastercard</li>
+                    </ul>
+                <li><label>Numéro de carte</label> : <input type="text" name="Numéro de carte" placeholder="Numéro de carte"/></li>
+                <li><label>Code de sécurité</label> : <input type="text" name="Code de sécurité" placeholder="Code de sécurité"/></li>
+                <li><label>Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"/></li>
+            </ol>
+    </form>
+    <!-- bouton de validation -->
+        <p> <button type="submit">J'achète</button> </p>
+</body>
+</html>
