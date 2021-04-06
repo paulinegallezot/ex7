@@ -9,39 +9,51 @@
 </head>
 <body>
 <!-- formulaire identité -->
-    <form id="identité">
-        <p>Votre identité</p>
+<form id="container">
+    <form id="youridentity">
+        <fieldset id="mail">
+            <legend id="titleidentity">Votre identité</legend>
             <ol>
                 <li><label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"/></li>
                 <li><label>Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom"/></li>
                 <li><label>Adresse mail</label> : <input type="text" name="Adresse mail" placeholder="Adresse mail"/></li>
             </ol>
-        
+        </fieldset>
     </form>
 <!-- formulaire adresse -->
-    <form id="adressedelivraison">
-        <p>Votre adresse de livraison</p>
+    <form id="deliveryaddress">
+        <fieldset id="address">
+            <legend id="titleaddress">Votre adresse de livraison</legend>
             <ol>
                 <li><label>Adresse</label> : <textarea id="Adresse" name="Adresse"></textarea></li>
                 <li><label>Code postal</label> : <input type="text" name="Code postal" placeholder="Code postal"/></li>
                 <li><label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"/></li>
             </ol>
+        </fieldset>    
     </form>
 <!-- formulaire règlement -->
-    <form id="règlement">
-        <p>Information de règlement</p>
+    <form id="regulation">
+        <fieldset id="card">
+            <legend id="card">Information de règlement</legend>
             <ol>
                 <li>Type de carte bancaire</li>
-                    <ul>
-                        <li>  VISA</li>
-                        <li>  Mastercard</li>
-                    </ul>
+                    <div>
+                        <input type="radio" id="visa" name="card" value="VISA">
+                        <label for="VISA">VISA</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mastercard" name="card" value="Mastercard">
+                        <label for="Mastercard">Mastercard</label>
+                    </div>
                 <li><label>Numéro de carte</label> : <input type="text" name="Numéro de carte" placeholder="Numéro de carte"/></li>
                 <li><label>Code de sécurité</label> : <input type="text" name="Code de sécurité" placeholder="Code de sécurité"/></li>
                 <li><label>Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"/></li>
             </ol>
+        </fieldset>    
     </form>
+</form>
     <!-- bouton de validation -->
-        <p> <button type="submit">J'achète</button> </p>
+        <p><button type="submit">J'achète</button></p> 
+  
 </body>
 </html>
