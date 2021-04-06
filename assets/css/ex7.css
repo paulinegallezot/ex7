@@ -1,28 +1,20 @@
-#identité{
-    width: 100%;
-    height: 110px;
-    background-color: rgb(37, 116, 169);
-}
-#adressedelivraison{
-    width: 100%;
-    height: 180px;
-    background-color: rgb(154, 18, 179);
-}
-#règlement{
-    width: 100%;
-    height: 170px;
+#card{
     background-color: rgb(219, 10, 91);
 }
-ul {
-    list-style: none
+#address{
+background-color: rgb(154, 18, 179);
 }
-ul li:before {
-    content: "\2022";
-    color: white;
-    font-size: 30px;
-    line-height: 0.1;
+#mail{
+    background-color: rgb(37, 116, 169);
 }
-#Adresse{
-    height: 70px;
-    width: 10%;
+
+
+#titleidentity{
+    background-color: rgb(37, 116, 169);
+}
+#titleaddress{
+    background-color: rgb(154, 18, 179);
+}
+#card {
+    background-color: rgb(219, 10, 91);
 }
