@@ -9,51 +9,53 @@
 </head>
 <body>
 <!-- formulaire identité -->
-<form id="container">
-    <form id="youridentity">
-        <fieldset id="mail">
-            <legend id="titleidentity">Votre identité</legend>
+<form class="container" method="POST" action="">
+    
+        <fieldset class="mail">
+            <legend class="titleIdentity">Votre identité</legend>
             <ol>
-                <li><label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"/></li>
-                <li><label>Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom"/></li>
-                <li><label>Adresse mail</label> : <input type="text" name="Adresse mail" placeholder="Adresse mail"/></li>
+                <li><label for="name">Nom</label> : <input id="name" type="text" name="name" placeholder="Nom"/></li>
+                <li><label for="firstName">Prénom</label> : <input id="firstName" type="text" name="firstName" placeholder="Prénom"/></li>
+                <li><label for="mailAddress">Adresse mail</label> : <input id="mailAddress" type="text" name="mailAddress" placeholder="Adresse mail"/></li>
             </ol>
         </fieldset>
-    </form>
+    
 <!-- formulaire adresse -->
-    <form id="deliveryaddress">
-        <fieldset id="address">
-            <legend id="titleaddress">Votre adresse de livraison</legend>
+    
+        <fieldset class="address">
+            <legend class="titleAddress">Votre adresse de livraison</legend>
             <ol>
-                <li><label>Adresse</label> : <textarea id="Adresse" name="Adresse" rows="5" cols="15"></textarea></li>
-                <li><label>Code postal</label> : <input type="text" name="Code postal" placeholder="Code postal"/></li>
-                <li><label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"/></li>
+                <li><label for="address">Adresse</label> : <textarea id="address" name="address" rows="5" cols="15"></textarea></li>
+                <li><label for="cityNumber">Code postal</label> : <input id="cityNumber" type="cityNumber" name="cityNumber" placeholder="Code postal"/></li>
+                <li><label for="city">Ville</label> : <input id="city" type="text" name="city" placeholder="Ville"/></li>
             </ol>
         </fieldset>    
-    </form>
+    
 <!-- formulaire règlement -->
-    <form id="regulation">
-        <fieldset id="card">
-            <legend id="card">Information de règlement</legend>
+    
+        <fieldset class="card">
+            <legend class="card">Information de règlement</legend>
             <ol>
-                <li>Type de carte bancaire</li>
+                <li>Type de carte bancaire
                     <div>
-                        <input type="radio" id="visa" name="card" value="VISA">
-                        <label for="VISA">VISA</label>
+                        <input type="radio" id="visa" class="visa" name="card" value="visa">
+                        <label for="visa">VISA</label>
                     </div>
                     <div>
-                        <input type="radio" id="mastercard" name="card" value="Mastercard">
-                        <label for="Mastercard">Mastercard</label>
+                        <input id="mastercard" type="radio" checked class="mastercard" name="card" value="mastercard">
+                        <label for="mastercard">Mastercard</label>
                     </div>
-                <li><label>Numéro de carte</label> : <input type="text" name="Numéro de carte" placeholder="Numéro de carte"/></li>
-                <li><label>Code de sécurité</label> : <input type="text" name="Code de sécurité" placeholder="Code de sécurité"/></li>
-                <li><label>Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"/></li>
+                    
+                </li>
+                <li><label for="cardNumber">Numéro de carte</label> : <input id="cardNumber" type="text" name="cardNumber" placeholder="Numéro de carte"/></li>
+                <li><label for="securityCode">Code de sécurité</label> : <input id="securityCode" type="text" name="securityCode" placeholder="Code de sécurité"/></li>
+                <li><label for="holderName">Nom du titulaire</label> : <input id="holderName" type="text" name="holderName" placeholder="Nom du titulaire"/></li>
             </ol>
         </fieldset>    
-    </form>
-</form>
+    
+
     <!-- bouton de validation -->
         <p><button type="submit">J'achète</button></p> 
-  
+  </form>
 </body>
 </html>
